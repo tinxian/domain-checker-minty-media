@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.atc-button {
+  width:120px;
+  height:40px;
+}
+
+.cart-popup {
+  right: 22.5%;
+}
