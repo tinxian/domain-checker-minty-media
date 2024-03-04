@@ -25,6 +25,7 @@ export default function Cart() {
     localStorage.setItem("cartItems", JSON.stringify(updatedCart));
   };
 
+  // Function to calculate subtotal
   const calculateSubtotal = () => {
     return cartItems.reduce((total, item) => total + parseFloat(item.price), 0);
   };
@@ -98,6 +99,7 @@ export default function Cart() {
   );
 }
 
+// Helper function to render cart items
 function cartItem(index, item, removeFromCart) {
   return (
     <div key={index} className="border rounded-lg p-4 grid items-start gap-4">
